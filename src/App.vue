@@ -4,9 +4,6 @@ import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme } from
 import { darkThemeOverrides, lightThemeOverrides } from './themes';
 import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
-import { useI18n } from 'vue-i18n'
-const { locale } = useI18n()
-locale.value = 'zh';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
